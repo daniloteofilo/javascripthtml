@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo IMC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<h1>Índice de Massa Corporal</h1>
+
+<p> De forma simples, a obesidade pode ser determinada pelo cálculo do Índice de Massa Corporal – IMC. Esse índice é dividido em faixas de IMC, que indicam seu grau de obesidade.</p>
+
+O IMC é calculado com a seguinte fórmula: <strong>IMC = Peso/Altura²</strong>
+
+<p>Preencha os campos abaixo para calcular o seu IMC.</p>
+
+<div>
+    <form>
+        <label>
+            <p>Qual é o seu nome?</p>
+            <input class="nome" type="text" placeholder="Exemplo: José">
+        </label>
+        
+        <label for="">
+            <p>
+                Qual o seu peso em Kgs?
+            </p>
+            <input class="peso" type="number" placeholder="Digite seu peso">
+        </label> 
+        
+        <label>
+            <p>
+                Qual a sua altura em metro?
+            </p>
+            <input class="altura" type="number" placeholder="1.75">
+        </label>
+
+        <button onclick="calcular()" type="button">Calcular</button>
+
+    </form>
+
+    <div>
+        <p id="resultado">
+            
+        </p>
+    </div>
+</div>
+
+    
+</body>
+    <script src="scripts.js">
+    </script>
+</html>
